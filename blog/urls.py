@@ -20,5 +20,6 @@ import blogs.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blogs', blogs.views.blogs)
+    path('blogs', blogs.views.blogs),
+    path('blog/<int:bid>', blogs.views.blog)
 ]
